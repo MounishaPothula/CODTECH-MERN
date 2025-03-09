@@ -1,0 +1,36 @@
+{
+  "name": "productivity-tracker-extension",
+  "version": "1.0.0",
+  "description": "Chrome extension for tracking and optimizing productivity",
+  "scripts": {
+    "build": "webpack --config webpack.config.js",
+    "watch": "webpack --config webpack.config.js --watch"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.11.0",
+    "@emotion/styled": "^11.11.0",
+    "@mui/icons-material": "^5.11.16",
+    "@mui/material": "^5.13.0",
+    "chart.js": "^4.3.0",
+    "material-ui-color": "^1.2.0",
+    "react": "^18.2.0",
+    "react-chartjs-2": "^5.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.21.8",
+    "@babel/preset-env": "^7.21.8",
+    "@babel/preset-react": "^7.18.6",
+    "babel-loader": "^9.1.2",
+    "canvas": "^3.1.0",
+    "copy-webpack-plugin": "^11.0.0",
+    "css-loader": "^6.7.3",
+    "style-loader": "^3.3.2",
+    "webpack": "^5.82.1",
+    "webpack-cli": "^5.1.1"
+  },
+  "main": "background.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

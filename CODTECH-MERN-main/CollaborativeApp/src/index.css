@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles */
+@layer base {
+  :root {
+    --primary-50: 240 249 255;
+    --primary-100: 224 242 254;
+    --primary-200: 186 230 253;
+    --primary-300: 125 211 252;
+    --primary-400: 56 189 248;
+    --primary-500: 14 165 233;
+    --primary-600: 2 132 199;
+    --primary-700: 3 105 161;
+    --primary-800: 7 89 133;
+    --primary-900: 12 74 110;
+  }
+
+  body {
+    @apply antialiased bg-gray-50 text-gray-900 dark:bg-gray-900 dark:text-white;
+  }
+
+  #root {
+    @apply min-h-screen flex flex-col;
+  }
+}
+
+/* React Quill styles */
+.ql-container {
+  @apply font-sans !important;
+  min-height: 200px;
+}
+
+.ql-editor {
+  @apply min-h-[200px] text-gray-900 dark:text-gray-100 !important;
+}
+
+.ql-toolbar {
+  @apply border border-gray-200 dark:border-gray-700 rounded-t-lg bg-white dark:bg-gray-800 !important;
+}
+
+.ql-container {
+  @apply border border-gray-200 dark:border-gray-700 rounded-b-lg !important;
+}
+
+.dark .ql-snow .ql-stroke {
+  @apply stroke-gray-400 !important;
+}
+
+.dark .ql-snow .ql-fill {
+  @apply fill-gray-400 !important;
+}
+
+.dark .ql-snow .ql-picker {
+  @apply text-gray-400 !important;
+}
+
+.dark .ql-snow .ql-picker-options {
+  @apply bg-gray-800 border-gray-700 !important;
+}
+
+/* Scrollbar styles */
+::-webkit-scrollbar {
+  @apply w-2;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-gray-300 dark:bg-gray-700 rounded-full;
+}
+
+/* Transitions */
+.transition-all {
+  @apply duration-200 ease-in-out;
+}
+
+/* Chat styles */
+.chat-message {
+  @apply max-w-[80%] rounded-lg px-4 py-2 mb-2;
+}
+
+.chat-message-mine {
+  @apply bg-primary-500 text-white ml-auto;
+}
+
+.chat-message-other {
+  @apply bg-gray-100 dark:bg-gray-700 text-gray-900 dark:text-white;
+}
+
+/* Canvas styles */
+canvas {
+  @apply touch-none;
+}
